@@ -14,11 +14,8 @@ export default function SearchPage({ movies, name }: movieProps) {
         Results for {movies[0]?.title}
       </h1>
       {movies?.map((movie: moviesProps) => (
-        <Link href={`/details/${movie?.id}`}>
-          <div
-            key={movie.id}
-            className="flex items-center space-x-10 justify-start mt-14"
-          >
+        <Link key={movie.id} href={`/details/${movie?.id}`}>
+          <div className="flex items-center space-x-10 justify-start mt-14">
             <div>
               <Image
                 className="rounded-lg object-cover object-center cursor-pointer shadow-md shadow-gray-900 drop-shadow-xl "
