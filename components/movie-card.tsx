@@ -26,7 +26,7 @@ export default async function MovieCard({
         {movies?.map((movie: moviesProps) => (
               <Link key={movie?.id} href={`/details/${movie?.id}`}>
             <div
-              className="flex lg:ml-4 ml-5 cursor-pointer transform lg:hover:scale-105 transition duration-200 ease-out hover:drop-shadow-lg flex-shrink-0"
+              className="flex cursor-pointer transform lg:hover:scale-105 transition duration-200 ease-out hover:drop-shadow-lg flex-shrink-0"
             >
               <p className="absolute z-50 bottom-[10%] text-white font-bold left-5 text-xl">
                 {movie?.name || movie?.title}
