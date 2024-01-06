@@ -22,7 +22,7 @@ export default async function Home() {
       <div className="my-28">
       <MovieCard  genre='tv/day' type="Trending Today" series="trending" />
       </div>
-      <div className="my-28">
+      <div className="mt-28 mb-4">
       <MovieCard  genre='top_rated' type="Top Rated" series="movie" />
       </div>
     </>
