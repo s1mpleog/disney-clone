@@ -20,7 +20,7 @@ export const Header = ({ movie }: movieProps) => {
     >
       <div className="embla__container">
         {movie?.map((item: moviesProps) => (
-          <div key={item?.id} className="embla__slide relative lg:h-[800px]">
+          <div key={item?.id} className="embla__slide relative h-[600px] lg:h-[800px]">
             <div className="absolute top-[50%] lg:left-20 left-10">
               <p className="lg:text-4xl text-2xl font-bold text-white">
                 {item?.title}
@@ -29,15 +29,17 @@ export const Header = ({ movie }: movieProps) => {
                 {item?.overview}
               </p>
             </div>
+            <div className="lg:h-auto h-[600px]">
             <Image
-              className="object-center object-contain"
+              className="object-center object-cover lg:h-auto h-[600px]"
               src={ImageLink(item?.backdrop_path)}
               alt="banner"
-              width={1980}
+              width={1920}
               height={1080}
               quality={100}
               priority
             />
+            </div>
             {/* <div className="absolute z-50 text-4xl font-bold text-black"> */}
             {/* </div> */}
           </div>
