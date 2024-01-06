@@ -19,7 +19,7 @@ export default async function MovieCard({
   const movies = data;
   return (
     <>
-      <h4 className="absolute -mt-20 lg:left-10 left-6 text-4xl z-50 font-bold">
+      <h4 className="absolute -mt-20 lg:left-10 left-5 text-4xl z-50 font-bold">
         {type}
       </h4>
       <div className="flex relative space-x-5 overflow-y-auto flex-shrink-0">
