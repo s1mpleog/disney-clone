@@ -1,0 +1,1 @@
+export const BASE_LINK = 'https://api.themoviedb.org/3/'
