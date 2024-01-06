@@ -5,6 +5,7 @@ import { movieProps, moviesProps } from "@/types";
 import Image from "next/image";
 import Link from "next/link";
 
+// @ts-ignore
 export default function SearchPage({ movies, name }: movieProps) {
   //   console.log("in search page", movies);
   return (

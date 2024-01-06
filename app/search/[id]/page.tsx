@@ -8,6 +8,7 @@ export default async function page({ params } : any) {
   const movies = data.results;
   return (
     <div>
+      {/* @ts-ignore */}
       <SearchPage movies={movies} name={name}/>
     </div>
   )
