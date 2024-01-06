@@ -19,14 +19,14 @@ export default async function MovieCard({
   const movies = data;
   return (
     <>
-      <h4 className="absolute -mt-20 left-10 text-4xl z-50 font-bold">
+      <h4 className="absolute -mt-20 lg:left-10 left-6 text-4xl z-50 font-bold">
         {type}
       </h4>
       <div className="flex relative space-x-5 overflow-y-auto flex-shrink-0">
         {movies?.map((movie: moviesProps) => (
               <Link key={movie?.id} href={`/details/${movie?.id}`}>
             <div
-              className="flex cursor-pointer transform hover:scale-105 transition duration-200 ease-out hover:drop-shadow-lg flex-shrink-0"
+              className="flex lg:ml-4 ml-5 cursor-pointer transform lg:hover:scale-105 transition duration-200 ease-out hover:drop-shadow-lg flex-shrink-0"
             >
               <p className="absolute z-50 bottom-[10%] text-white font-bold left-5 text-xl">
                 {movie?.name || movie?.title}
