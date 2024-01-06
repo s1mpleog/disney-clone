@@ -18,7 +18,7 @@ export const Header = ({ movie }: movieProps) => {
       className="embla mx-auto -z-50 lg:-mt-40 -mt-24"
       ref={emblaRef}
     >
-      <div className="embla__container transition-all animate-in translate-y-6">
+      <div className="embla__container transition-all duration-[0.2s] translate-y-6">
         {movie?.map((item: moviesProps) => (
           <div key={item?.id} className="embla__slide transition-all duration-200 relative h-[500px] lg:h-[800px]">
             <div className="absolute top-[50%] lg:left-20 left-10">
