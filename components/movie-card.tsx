@@ -36,7 +36,6 @@ export default async function MovieCard({
                 src={ImageLink(movie?.backdrop_path)}
                 width={1920}
                 height={1080}
-                priority
                 quality={60}
                 alt={movie?.title}
               />
