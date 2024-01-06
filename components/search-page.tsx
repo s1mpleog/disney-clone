@@ -1,5 +1,3 @@
-export const revalidate = 3600; // revalidate at most every hour
-
 import { ImageLink } from "@/lib/image_link";
 import { movieProps, moviesProps } from "@/types";
 import Image from "next/image";
