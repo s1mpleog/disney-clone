@@ -15,7 +15,7 @@ export const Header = ({ movie }: movieProps) => {
 
   return (
     <div
-      className="embla mx-auto -z-50 lg:-mt-40"
+      className="embla mx-auto -z-50 lg:-mt-40 -mt-24"
       ref={emblaRef}
     >
       <div className="embla__container">

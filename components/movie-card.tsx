@@ -38,7 +38,7 @@ export default async function MovieCard({
                 width={1920}
                 height={1080}
                 priority
-                quality={100}
+                quality={60}
                 alt={movie?.title}
               />
             </div>

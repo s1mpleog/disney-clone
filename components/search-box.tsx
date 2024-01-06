@@ -12,7 +12,7 @@ export default function SearchBox() {
   return (
     <form action={handleSubmit}>
       <input
-        className="dark:bg-[#1A1C29] bg-transparent py-2 indent-4 rounded-md lg:w-48 w-36"
+        className="dark:bg-[#1A1C29]/40 bg-transparent py-2 indent-4 rounded-md lg:w-48 w-36"
         type="text"
         placeholder="Search..."
         name="search"

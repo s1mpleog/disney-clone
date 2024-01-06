@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="flex relative lg:space-x-0 space-x-40 justify-between z-50 items-center mt-10 lg:px-10 px-5">
+    <nav className="flex relative justify-between z-50 items-center lg:mt-10 mt-5 lg:px-10 px-5">
       <div className="">
         <Link href="/">
           <Image

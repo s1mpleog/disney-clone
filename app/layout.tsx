@@ -18,14 +18,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.className}, "dark:bg-[#1A1C29] bg-white"`}>
+      <body className={`${inter.className}, "overflow-y-hidden
+      dark:bg-[#1A1C29] bg-white"`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
         >
-          <nav className="lg:relative absolute z-[9999]">
+          <nav>
             <Navbar />
           </nav>
           {children}
